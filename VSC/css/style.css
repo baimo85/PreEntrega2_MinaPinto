@@ -1,0 +1,304 @@
+@font-face {
+    font-family: "nunito";
+    src: url("../assets/fonts/Nunito-VariableFont_wght.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "nunito";
+    font-weight: 250;
+}
+
+header {
+    margin-bottom: 10px;
+    padding-top: 20px;
+    }
+
+/*TODO esto pertenece al header*/
+.infotop figure img {
+    width: auto;
+    height: 90px;
+    padding-left: 40px;
+}
+
+.infotop {
+    max-height: auto;
+    display: flex;
+}
+
+/*Esto pertecene especificamente a los iconos de información (ubicación, llámanos y correo)*/
+.info {
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    padding-left: 350px;
+    gap: 20px;
+}
+
+/*TODO esto pertenece al main*/
+/*Foto que cubre el principio de cada páginna*/
+.bannertop {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 50px;
+}
+
+/*Información de la página index*/
+.textoprincipal {
+    display: flex;
+    width: auto;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/*TODO esto pertenece al footer*/
+.final {
+    text-align: center;
+    margin-top: 50px;
+    height: auto;
+}
+
+/* IMG para el sticky de whatsapp*/
+#whats {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 80;
+    font-size: 50px;
+}
+
+/*TODO esto pertenece a la pestaña EMPRESA*/
+/*Esto engloba todo el texto y principal con la imagen, hay que modificar esto con MQ para poder ordenarlo dependiendo del tamaño de la pantalla*/
+.articulobanner {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/*Esta es la imagen que está a un costado del texto por lo que también hay que moverla con MQ*/
+.logo66 {
+    width: 400px;
+    height: 500px;
+    margin-right: 80px;
+    margin-top: 90px;
+}
+/*Esto es específico del texto que se encuentra del lado izquierdo*/
+.art-datos {
+    text-align: left;
+}
+
+.a2 {
+    width: 600px;
+    margin-right: 100px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/*TODO esto pertenece a la pestaña SERVICIOS*/
+#logo55 {
+    width: 1295px;
+    height: 300px;
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#vid-man {
+    display: flex;
+}
+#vid-man p {
+    width: 450px;
+    margin-left: 100px;
+    margin-top: 60px;
+}
+#vid-man iframe {
+    margin-left: 25px;
+    margin-top: 20px;
+}
+#vid-rep {
+    display: flex;
+    flex-direction: row-reverse;
+}
+#vid-rep p {
+    width: 450px;
+    margin-right: 100px;
+    margin-top: 60px;
+}
+#vid-rep iframe {
+    margin-right: 25px;
+    margin-top: 20px;
+}
+#vid-equi {
+    display: flex;
+}
+#vid-equi p {
+    width: 450px;
+    margin-left: 100px;
+    margin-top: 60px;
+}
+#vid-equi iframe {
+    margin-left: 25px;
+    margin-top: 20px;
+}
+.textoservprincipal h2 {
+    text-align: center;
+    margin-top: 25px;
+}
+
+/*TODO - MQ Tableta*/
+@media screen and (max-width: 1024px) {
+    .info {
+        display: flex;
+        width: auto;
+        height: auto;
+        justify-content: right;
+        padding-top: 20px;
+        text-align: center;
+        font-size: 13px;
+        padding-left: 170px;
+        gap: 20px;
+    }
+
+    .infotop figure img {
+        width: auto;
+        height: 60px;
+        padding-left: 40px;
+    }
+
+    .bannertop {
+        max-width: 100%;
+        height: 300px;
+        display: auto;
+        padding-top: 5px;
+        padding-bottom: 50px;
+    }
+
+    .textoprincipal {
+        display: flex;
+        width: auto;
+        justify-content: space-evenly;
+        text-align: center;
+        font-size: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .textoprincipal div {
+        width: 500px;
+        height: 150px;
+    }
+
+    .final {
+        text-align: center;
+        margin-top: 60px;
+    }
+    
+    .final {
+        text-align: center;
+        margin-top: 50px;
+        height: auto;
+    }
+
+/*MQ - CSS EMPRESA*/
+    .articulobanner {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    .logo66 {
+        display: none;
+}
+
+    .a2 {
+        text-align: center;
+        width: 400px;
+        margin-right: 0px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+/*TODO - MQ Mobil*/
+@media screen and (max-width: 480px) {
+    .info {
+        width: auto;
+        height: auto;
+    }
+
+    .info div {
+        display: none;
+    }    
+
+    .infotop {
+        width: auto;
+        display: flex;
+    }
+
+    .infotop figure img {
+        width: auto;
+        height: 60px;
+        padding-left: 40px;
+    }
+
+    .bannertop {
+        max-width: 100%;
+        height: auto;
+        display: auto;
+        padding-top: 5px;
+        padding-bottom: 50px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .textoprincipal {
+        display: flex;
+        width: auto;
+        justify-content: space-evenly;
+        text-align: center;
+        font-size: 12px;
+        padding-left: 30px;
+        padding-right: 30px;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .textoprincipal div {
+        width: auto;
+        height: auto;
+    }
+
+    .final {
+        text-align: center;
+        margin-top: 60px;
+    }
+    
+    .final {
+        text-align: center;
+        margin-top: 50px;
+        height: auto;
+    }
+}
